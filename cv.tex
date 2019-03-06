@@ -1,0 +1,161 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt, a4paper]{article}
+\usepackage{fontspec} 
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+%\setmonofont[Scale=0.8]{Monaco}
+%%% modified by Karol Kozioł for ShareLaTeX use
+\setmainfont[
+  Ligatures={Common}, Numbers={OldStyle}, Variant=01,
+  BoldFont=LinLibertine_RB.otf,
+  ItalicFont=LinLibertine_RI.otf,
+  BoldItalicFont=LinLibertine_RBI.otf
+]{LinLibertine_R.otf}
+\setmonofont[Scale=0.8]{DejaVuSansMono.ttf}
+
+% ---- CUSTOM COMMANDS
+\chardef\&="E050
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize} 
+\subsubsectionfont{\mdseries\upshape\large} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[%dvipdfm, 
+bookmarks, colorlinks, breaklinks, 
+% ---- FILL IN HERE THE TITLE AND AUTHOR
+	pdftitle={Albert Einstein - vita},
+	pdfauthor={My name},
+	pdfproducer={http://nitens.org/taraborelli/cvtex}
+]{hyperref}  
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} 
+
+% DOCUMENT
+\begin{document}
+{\LARGE Rodrigo Rampazo Amadeu}\\[1cm]
+ Fifield Hall\\
+ 2550  Hull Rd\\
+Gainesville, FL, U.S.A.\\[.2cm]
+email: \href{mailto:rramadeu@ufl.edu}{rramadeu@ufl.edu}\\
+\textsc{url}: \href{https://rramadeu.github.io/}{https://rramadeu.github.io/}\\ 
+Nationality:  Brazilian\\
+\hrule
+\section*{Current position}
+\emph{Ph.D. Student} \& Graduate Research Assistant, \href{https://www.blueberrybreeding.com}{Blueberry Breeding \& Genomics Lab}\\
+PI: Dr. Patricio Munoz\\
+Horticultural Sciences Department, University of Florida, USA
+
+%%\hrule
+\section*{Areas of specialization}
+ Plant Genetics \& Breeding • Statistical-Genetics
+
+%%\hrule
+%\section*{Appointments held}
+%\noindent
+%\years{1903-1908}Swiss Patent Office, Bern\\
+%\years{1908-1911}University of Bern\\
+%\years{1911-1912}University of Zürich\\
+%\years{1912-1914}Charles University of Prague\\
+%\years{1914-1932}Prussian Academy of Sciences, Berlin\\
+%\years{1920-1930}University of Leiden\\
+%\years{1932-1955}Institute for Advanced Study, Princeton
+
+%\hrule
+\section*{Education}
+\noindent
+\years{2018}\textsc{M.S.} in Plant Genetics and Breeding, University of São Paulo, Brazil\\
+\years{2016}\textsc{B.Eng.} in Agriculture, University of São Paulo, Brazil\\
+\years{2016}\textsc{B.Edu.} in Agricultural Sciences, University of São Paulo, Brazil\\
+
+%\hrule
+%\section*{Grants, honors \& awards}
+\section*{Awards \& Scholarships}
+\noindent
+\years{2019}Poster Competition Plant Science Symposium, University of Florida - 1\textsuperscript{st} Place Winner\\
+\years{2016}Prof Friedrich Gustav Brieger Prize - Best graduating student of Department of Genetics\\
+\years{2013}Scholarship, Science without Borders - CAPES - 1yr at University of Florida\\
+\years{2012}Scholarship, Scientific Initiation - PIBIC/CNPq - 1yr\\
+\years{2011}Scholarship, Scientific Initiation - Santander - 1yr\\
+
+\section*{Journal Articles}
+
+%\subsection*{Journal articles}
+\noindent
+\years{2019}de Bem Oliveira, \emph{et al}, "Genomic prediction of autotetraploids; influence of relationship matrices, allele Dosage, and continuous genotyping calls in phenotype prediction",  \emph{G3}, 3, \href{https://doi.org/10.1534/g3.119.400059}{link}\\
+\years{2018}Conson, Taniguti \& Amadeu, \emph{et al}, "High-resolution genetic map and QTL analysis of growth-related traits of \emph{Hevea brasiliensis}",  \emph{Front. Plant Sci.}, 9(1255), \href{https://doi.org/10.3389/fpls.2018.01255}{link}\\
+\years{2018}Ferreira \emph{et al}, "Metabolite profiles of sugarcane culm reveal the relationship among metabolism and axillary bud outgrowth in genetically related sugarcane commercial cultivars",  \emph{Front. Plant Sci.}, 9(857), \href{https://doi.org/10.3389/fpls.2018.00857}{link}\\
+\years{2018}Cellon \emph{et al}, "Estimation of genetic parameters and prediction of breeding values in an autotetraploid blueberry breeding population with extensive pedigree data",  \emph{Euphytica}, 214(87), \href{https://doi.org/10.1007/s10681-018-2165-8}{link}\\
+\years{2016}Amadeu \emph{et al}, "AGHmatrix: R package to construct relationship matrices for autotetraploid and diploid Species, a blueberry example",  \emph{The Plant Genome}, 9(3), \href{http://doi.org/10.3835/plantgenome2016.01.0009}{link}\\
+
+\section*{Softwares}
+\years{AGHmatrix}author, software to compute relationship matrices for diploid and autopolyploid species, \href{https://cran.r-project.org/package=AGHmatrix}{link}\\
+\years{onemap}contributor, software for constructing genetic maps in experimental crosses, \href{https://cran.r-project.org/package=onemap}{link}\\
+\years{onemap2pop}author, onemap extension for constructing multi-family genetic maps in outcrossing species, \href{https://www.github.com/augusto-garcia/onemap2pop}{link}\\
+\years{fullsibQTL}co-author, software for QTL mapping in outcrossing species using composite interval mapping, \href{https://www.github.com/augusto-garcia/fullsibQTL}{link}\\
+%\hrule
+
+\section*{Skills}
+\years{programming}R: advanced (package development, tidyverse, shiny/plotly app, parallelization)\\
+\years{programming}shell script, ASReml, \LaTeX \\
+\years{statistics}experimental analysis of genetic \& agricultural data\\
+\years{language}english \& portuguese
+
+\section*{Teaching}
+\years{2010-...}several R programming courses \href{https://rramadeu.github.io/year-archive/}{link}\\
+\years{2018}TA of Field Plot Techniques, grad, University of Florida\\
+\years{2015}TA of Calculus I, undergrad, University of Sao Paulo\\
+\years{2012}TA of Calculus I, undergrad, University of Sao Paulo\\
+\years{2011-2015}Algebra instructor in a college prep school\\
+
+%\vspace{1cm}
+\vfill{}
+%\hrulefill
+
+\begin{center}
+{\scriptsize  Last updated: \today\- •\- 
+% ---- PLEASE LEAVE THIS BACKLINK FOR ATTRIBUTION AS PER CC-LICENSE
+Typeset in \href{http://nitens.org/taraborelli/cvtex}{
+%\fontspec{Times New Roman}
+\XeTeX }\\
+% ---- FILL IN THE FULL URL TO YOUR CV HERE
+\href{https://rramadeu.github.io/cv/}{https://rramadeu.github.io/cv/}}
+\end{center}
+
+\end{document}
